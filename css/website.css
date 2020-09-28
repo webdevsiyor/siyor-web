@@ -371,7 +371,8 @@ ul.breadcrumb {
     font-size: 0.875rem;
 }
 
-.breadcrumb li:last-child:before {
+
+.breadcrumb li:not(:first-child):before {
     color: #39373c !important;
     content: '';
     transform: rotate(45deg);
@@ -386,8 +387,13 @@ ul.breadcrumb {
     font-size: 0.875rem;
 }
 
-.breadcrumb a {
+.breadcrumb li:not(first-child)>span {
+    color: #39373c;
+}
+
+.breadcrumb li a {
     text-decoration: none;
+    color: #4177f6;
 }
 
 .breadcrumb a:hover {
@@ -459,4 +465,108 @@ ul.summary-list {
     box-sizing: border-box;
     cursor: pointer;
     outline: none;
+}
+
+/*form page */
+
+.job_form {
+    margin-top: 30px;
+}
+
+form {
+    display: block;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto 0;
+}
+
+.form_items_holder {
+    padding: 24px 0 8px;
+    border-top: 1px solid #f2f4f9;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    transition: all .3s;
+}
+
+.form_items_holder:first-child {
+    padding-top: 0;
+    border: none;
+}
+
+form h3.cw-section-title {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.1875rem;
+    margin-bottom: 16px;
+    position: relative;
+    color: #000000;
+}
+
+a.cw-form-clear {
+    font-size: 0.875rem;
+    opacity: 1;
+    color: #296acf;
+    padding-left: 16px;
+    position: relative;
+}
+
+a.cw-form-clear.inactive {
+    opacity: .3 !important;
+    cursor: not-allowed;
+}
+
+.form_item {
+    margin-bottom: 16px;
+    position: relative;
+    transition: all .3s;
+}
+
+.form_item label {
+    width: 100%;
+    text-align: left;
+    padding-right: 0;
+    line-height: 22px;
+    font-size: 0.875rem;
+    color: #39373c !important;
+}
+
+span.form-mandatory {
+    color: #dc5757;
+    font-size: 1.5rem;
+    margin-left: -2px;
+}
+
+.InputField {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.job_form input {
+    width: 100%;
+}
+
+.job_form input:focus {
+    border: 1px solid #7fceef;
+}
+
+select#currentJob {
+    border-color: #ccd4e3;
+    box-shadow: none;
+    padding: 9px 25px 8px 10px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button.submit-btn {
+    background-color: #4177f6;
+    border-color: #4177f6;
+    color: white;
+}
+
+.buttons-container {
+    padding: 32px 0;
+    text-align: center;
 }

@@ -59,3 +59,89 @@ h6 {
     margin-block-end: 2.33em;
     font-weight: bold;
 }
+
+label {
+    display: inline-block;
+    font-size: 0.93rem;
+    padding-right: 20px;
+    text-align: right;
+    box-sizing: border-box;
+    width: 40%;
+    vertical-align: top;
+    color: #646d8c;
+    position: relative;
+    line-height: 20px;
+    vertical-align: middle;
+    word-break: break-word;
+}
+
+input {
+    font-size: 0.929rem;
+    color: #191b22;
+    outline: 0;
+    box-sizing: border-box;
+    padding: 6px 10px 7px;
+    box-shadow: none;
+    vertical-align: top;
+    height: auto;
+    line-height: 23px;
+    font-weight: 400;
+    background: #fff;
+    border: 1px solid #dee4f0;
+    border-radius: 4px;
+}
+
+select {
+    border: 2px solid #ccd4e3;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+    display: block;
+    padding: 6px 30px 6px 10px;
+    box-sizing: border-box;
+    color: #222;
+    background: #fff;
+    transition: box-shadow .1s ease-in-out;
+    font-size: 0.875rem;
+}
+
+textarea {
+    box-shadow: none;
+    display: inline-flex;
+    width: 100%;
+    border-radius: 4px;
+    outline: none !important;
+    border: 1px solid #d6d6d6;
+    flex-grow: 1;
+    font-size: 0.875rem;
+    padding: 6px 10px 7px;
+    line-height: 23px;
+    font-weight: 400;
+}
+
+input:focus, textarea:focus{
+    border: 1px solid #7fceef;
+}
+
+button {
+    opacity: 1;
+    border: 1px solid #dee4f0;
+    font-weight: 500;
+    font-size: 1.0625rem;
+    line-height: 1.071rem;
+    color: #191b22;
+    padding: 10px 16px;
+    border-radius: 4px;
+    background: #fff;
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    opacity: .8;
+    border: 1px solid #dee4f0;
+    background: #dee4f0;
+}
