@@ -371,7 +371,6 @@ ul.breadcrumb {
     font-size: 0.875rem;
 }
 
-
 .breadcrumb li:not(:first-child):before {
     color: #39373c !important;
     content: '';
@@ -569,4 +568,106 @@ button.submit-btn {
 .buttons-container {
     padding: 32px 0;
     text-align: center;
+}
+
+
+@media (max-width: 960px){
+    .b-hldr {
+        text-align: center;
+        min-height: 34rem;
+        padding: 5.5rem 0 3rem;
+        width: 100%;
+    }
+    
+    .page-center {
+        width: 96%;
+    }
+    
+    .jobcard-container {
+        column-count: 2;
+        grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    }
+
+    .summary {
+        padding: 24px 16px;
+    }
+}
+
+@media (max-width: 767px){
+    .banner-text h1 {
+        margin-bottom: 8px;
+    }
+    
+    .banner-text h2 {
+        padding: 0;
+        font-size: 2.2rem;
+    }
+    
+    .banner p {
+        padding: 0;
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    section.jobs_section {
+        padding: 32px 0;
+    }
+    
+    .page-center {
+        width: 92%;
+    }
+
+    .summary {
+        margin: 0 auto;
+        padding: 24px 0 8px;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 624px){
+    section.jobs_section {
+        padding: 32px 0;
+    }
+    
+    .page-center {
+        width: 92%;
+    }
+    
+    .job_posts h4 {
+        top: 0;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 0;
+    }
+    
+    .jobcard-container {
+        column-count: 1;
+    }
+    
+    .joblist-card p.card-text {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+
+    .jp-holder {
+        flex-direction: column;
+    }
+    
+    .jobdescription {
+        width: 100%;
+        padding: 24px 20px 24px 0;
+    }
+
+    .white-btn {
+        display: block;
+    }
+    
+    .blue-btn {
+        display: block;
+    }
 }
